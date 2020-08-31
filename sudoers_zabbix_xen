@@ -1,0 +1,4 @@
+Defaults:zabbix !requiretty
+Cmnd_Alias	XEN = /usr/sbin/xl info, /usr/sbin/xl list*, /usr/sbin/xentop*
+zabbix ALL=(ALL) NOPASSWD: XEN
+Defaults!SMARTCTL !logfile, !syslog, !pam_session
